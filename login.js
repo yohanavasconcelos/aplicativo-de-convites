@@ -8,6 +8,7 @@ function login(name, password) {
     return iniciar;
 }
 
-module.export = {  
+
+export {  
     login
 } 

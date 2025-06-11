@@ -7,7 +7,7 @@ function cadastro (email, password, name){
     return site;
 }
 
-module.export = {
+export {
     cadastro,
     user
 }
