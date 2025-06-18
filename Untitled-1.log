@@ -1,9 +1,0 @@
-cliente: eu quero um site para eu fazer o convite para mim e fazer cadastrar e 
-quando eu fizer o login eu vou poder criar vários convites e posso escolher a moldura deles para 
-cada convite eu posso adicionar quantos convidados eu quiser e quero 
-disparar mensagem automaticamente para esse convidados pelo whats e e-mail com o link do convite.
-
-
-
-a função cadatro tem que estar conectada ao banco de dados (firebase) para que fique registrado o 
-cadstro de nosso cliente.
