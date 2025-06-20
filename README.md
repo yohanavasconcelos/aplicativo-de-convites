@@ -2,9 +2,8 @@
 
 https://aplicativo-de-convites.vercel.app/
 
-O aplicativo de convites foi um desafio da empresa Utronics de um processo seletivo para estágio.
 
-O aplicativo consiste em um site onde o cliente pode escolher um dos templetes de convite e modificar a cor da sua borda.
+O aplicativo de convite consiste em um site onde o cliente pode escolher um dos templetes de convite e modificar a cor da sua borda.
 
 
 ## Layout login
