@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convite</title>
+    <link rel="stylesheet" href="styles_convite.css">
+</head>
+<!-- <img src="img/brasao.png" alt="brasao"> -->
+
+<body>
+    <main>
+        <img src="img/brasao.jpeg" alt="brasao" class="brasao">
+
+        <p class="descricao">"Antes mesmo de te formar no ventre materno,Eu te escolhi: antes que viesse ao mundo,
+            <br> Eu te separei e te designei para a missão de profeta para as nações!".
+            <br>Jeremias 1:5
+        </p>
+
+        <p class="convidar">Os pais <br>Lúcio Roberto e Késia
+            <br>convidam para o aniversário de 15 anos de sua filha.
+        </p>
+
+
+        <h1 class="nome">Isabella</h1>
+        <!-- <h1 class="idade">15 Anos</h1> -->
+        <section class="informacoes">
+            <div class="conteudo-centralizado">
+                <div class="dia_da_festa">
+                    <p class="dia">19</p>
+                    <div class="dia-semana_mes">
+                        <p class="mes-dia">NOVEMBRO <br> TERÇA</p>
+                    </div>
+                    <p class="ano">2024</p>
+                    <div class="horario">
+                        <p class="horas">ÁS 21:00 <br> HORAS</p>
+                    </div>
+                </div>
+                <div class="local">
+                    <p class="salao_local">Espaço Adriano Guedes 
+                        <br> Rua Mistral - Despraido - Cuiabá - MT</p>
+                </div>
+
+            </div>
+            <p class="data-confirmacao">Confirmar presença até dia 03.11.2024</p>
+            <div class="icones">
+                <div class="confirmacao1">
+                    <a class="confirmar_presenca">
+                        <img src="img/coracao.png" alt="coracao" class="presenca">
+                    </a>
+                    <p class="confirmacao_presenca">CONFIRMAR PRESENÇA</p>
+                </div>
+                <div class="local-icone">
+                    <a class="localizacao">
+                        <img src="img/localizador.png" alt="localizador" class="localizador">
+                    </a>
+                    <p class="localizacao_mapa">ENDEREÇO NO MAPA</p>
+                </div>
+                <div class="traje">
+                    <div class="imagem">
+                        <img src="img/vestido.png" alt="vestido" class="vestido">
+                        <img src="img/camisa.png" alt="camisa" class="camisa">
+                    </div>
+                    <p class="traje_texto">TRAJE: SOCIAL</p>
+                    <p class="evitar">Evite a cor Vermelho e Rosa</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<footer>
+    <ol>
+        <p>Mude a cor da borda aqui</p>
+        <button onclick="mudarCorBorda('pink')">Rosa</button>
+        <button onclick="mudarCorBorda('black')">Preto</button>
+        <button onclick="mudarCorBorda('purple')">Roxo</button>
+        <button onclick="voltarCor()">Cor original</button>
+    </ol>
+</footer>
+<script src="./convites.js"></script>
+
+</html>

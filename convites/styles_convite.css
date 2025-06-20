@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --cor-borda: #BEA905;
+    --cor-borda-icones: #D4C633;
+    --cor-principal: rgb(128, 0, 0);
+    --cor-principal-casamento:rgb(185, 7, 75);
+    --cor-fundo-icones: rgb(218, 57, 108);
+    --fonte-nome: "Sevillana", cursive;
+    --fonte-principal: "Playwrite DK Uloopet", cursive;
+    --fonte-data: "Merriweather", serif;
+    --fonte-casamento-principal: "Mulish", sans-serif;
+}
+
+body{
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    border: 4px solid var(--cor-borda);                        
+    box-sizing: border-box; 
+    height: 35em;
+    font-family: var(--fonte-principal);
+    position: relative;
+    margin: 4em 28em 30em;
+    color: var(--cor-principal);
+}
+
+.brasao{
+    margin-top: -2.5em;
+    width: 7.5em;
+    height: 6em;
+}
+
+ 
+.descricao{
+    font-size: 0.5em;
+    
+}
+
+.convidar{
+    font-size: 0.7em;
+    
+}
+
+.pais_nome{
+    margin: -1.2em 0;
+    
+}
+
+.nome{
+    margin-top: 0.2em;
+    font-family: var(--fonte-nome);
+    font-weight: 400;
+    font-size: 3.4em;
+    
+}
+
+.dia_da_festa{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: -4em;
+    font-family: var(--fonte-data);
+    
+}
+.dia{
+     padding-top: 0.2em;
+     padding-right: 0.2em;
+     font-size: 1.5em;
+     font-weight: bold;
+     
+}
+.dia-semana_mes{
+    height: 3.2em;
+    margin-top: -1em;
+    padding-right: 0.8em;
+    margin-right: -1em;
+    font-size: 0.8em;
+    
+    
+}
+.mes-dia{
+    padding-top: -2em;
+    padding-right: 0.5em;
+    
+}
+
+.ano{
+    border-right: 3px solid var(--cor-principal);
+    border-left: 3px solid var(--cor-principal);
+    height: 1.1em;
+    padding-top: 2em;
+    padding: 0 0.2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.horario{
+    padding-left: 0.5em;
+    font-size: 0.8em;
+    
+}
+
+.local{
+    font-size: 0.8em;
+    
+}
+
+.data-confirmacao{
+    font-size: 0.8em;
+    
+}
+
+.icones{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 16vh;
+    margin-left: 1em;
+    margin-top: -0.4em;
+}
+    
+
+.confirmacao1{
+    padding-right: 1em;
+    padding-bottom: 0.2em;
+    
+}
+
+.presenca{
+    width: 1em;
+    height: 1em;
+    
+
+}
+
+.confirmacao_presenca{
+    border: 1px solid transparent;
+    height: 2em;
+    width: 5.3em;
+    margin-right: 1.5em;
+    font-size: 0.5em;
+}
+
+.local-icone{
+    margin-right: -1.5em;
+    
+}
+
+.localizador{
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+    width: 1em;
+    height: 1em;
+}
+
+.localizacao_mapa{
+    border: 1px solid transparent;
+    height: 3em;
+    width: 5.3em;
+    margin-left: 0.5em;
+    font-size: 0.5em;
+}
+
+.traje{
+    padding-left: 2em;
+    margin-top: -4.2em;
+}
+
+.imagem{
+    margin: 4.5em 0 -0.5em 0;
+}
+
+.vestido{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.camisa{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.traje_texto{
+    border: 1px solid transparent;
+    height: 3em;
+    width: 10em;
+    margin-left: 1em;
+    margin-bottom: 0.8em;
+    font-size: 0.5em;
+} 
+
+.evitar{
+    border: 1px solid transparent;
+    height: 3em;
+    width: 9em;
+    margin-right: 0.5em;
+    margin-top: -0.4em;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin-bottom: -2.4em;
+}
+
+
+footer{
+    color: #000;
+    padding-top: 2em;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: rgb(125, 125, 235);
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+button:hover {
+    background: #07001f;
+}
+
+/* convite de casamento */
+.convite-casamento{
+    font-family: var(--fonte-casamento-principal);
+    background-color: #f5f1e9;
+    padding-bottom: 30em;
+}
+
+.flores{
+    height: 15em;
+    width: 20em;
+}
+
+.flor-esquerda{
+    margin-left: -4.5em;
+    padding-right: 10em;
+    margin-top: -3em;
+}
+
+.flor-direita{
+    margin-top: -12em;
+    margin-right: -15em;
+}
+
+.convite_casamento{
+    color: var(--cor-principal-casamento);                  
+}
+
+
+.descricao1{
+    font-size: 0.7em;
+    padding-left: 6em;
+    margin-top: -16.5em;
+    margin-right: -15em;
+}
+
+.casal{
+    font-weight: bold;
+}
+
+.casamento{
+    margin-top: -2em;
+}
+
+.diaD{
+    border: 2px solid var(--cor-principal-casamento);
+    border-right: none;
+    border-left: none;
+    margin: 0 6em;
+    height: 4em;
+    padding-top: 1em;
+}
+
+.festa-local{
+    margin-top: 0.6em;
+    font-size: bold;
+}
+
+.festa--local{
+    margin-top: -0.5em;
+}
+
+.icones1{
+    display: flex;
+    margin-top: 2.6em;
+    margin-left: 1.2em;
+}
+
+.traje1{
+    margin-top: -4em;
+    padding-left: 1em;
+}
+
+.traje-vestimenta{
+    border: 1px solid var(--cor-fundo-icones);
+    background-color: var(--cor-fundo-icones);
+    padding: 0.8em 0.9em 0.5em;
+    border-radius: 2em;
+        
+}
+    
+.imagem__icones{
+    width: 1em;
+    height: 1em;
+}
+
+.codigo_vestimenta{
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    font-size: 8px;
+    color: var(--cor-escrita);
+}
+
+.sua-presenca{
+    margin-top: -4em;
+    padding-left: 2em;
+}
+
+.confirmacao{
+    border: 1px solid var(--cor-fundo-icones);
+    background-color: var(--cor-fundo-icones);
+    padding: 0.8em 0.9em 0.5em;
+    border-radius: 2em;
+        
+}
+.sua-presenca__confirmacao{
+    padding-top: 0.8em;
+    font-size: 8px;
+    color: var(--cor-escrita);
+    padding-right: 1em;
+    
+}
+.localizacao1{
+    margin-top: -4em;
+    padding-right: 1.4em;
+}
+
+.localizador1{
+    border: 1px solid var(--cor-fundo-icones);
+    background-color: var(--cor-fundo-icones);
+    padding: 0.8em 0.9em 0.5em;
+    border-radius: 2em;
+    
+        
+}
+.localizacao_{
+    padding-top: 0.8em;
+    font-size: 8px;
+    color: var(--cor-escrita);
+}

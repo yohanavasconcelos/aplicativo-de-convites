@@ -1,5 +1,5 @@
-import { getAuth, onAuthStateChanged, singOut } from 'firebase-auth.js';
-import { getFirestore, getDoc, doc } from 'firebase-firestore.js';
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
 
 const auth = getAuth();
 const db = getFirestore();
@@ -30,7 +30,7 @@ const logoutButton = document.getElementById('logout');
 
 logoutButton.addEventListener('click', () => {
     localStorage.removeItem('loggetInUserId');
-    singOut(auth)
+    signOut(auth)
         .then(() => {
             window.location.href = '../index.html';
         })

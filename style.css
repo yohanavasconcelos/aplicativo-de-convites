@@ -167,17 +167,27 @@ button:hover {
 }
 
 /* css dos templetes */
+.container_{
+    margin-left: 20em;
+}
 .templetes {
-    padding: 30px;
     background: #c9d6ff;
     text-align: center;
 }
 
 .bem-vindo {
     text-align: center;
-    padding: 0 2em 4em 6em;
-    
 }
+
+.templetes {
+    display: flex;
+}
+
+.convites {
+    align-items: center;
+    padding: 1em;
+}
+
 
 #logout {
     color: blueviolet;
@@ -187,6 +197,7 @@ button:hover {
     font-size: 1rem;
     font-weight: bold;
     border: none;
+    margin-top: 15em;
 }
 
 #logout:hover {
@@ -213,13 +224,4 @@ span {
     color: black;
 }
 
-.templetes {
-    display: flex;
-    padding: 8em 400em 0 0;
-    margin-left: -5em;
-}
 
-.convites {
-    align-items: center;
-    padding: 1em;
-}

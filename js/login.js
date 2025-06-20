@@ -1,5 +1,5 @@
-import { getAuth, createUserWhithEmailAndPassword, singInWithEmailAndPassword } from "../node_modules/@firebase/auth";
-import { getFirestore, setDoc, doc } from "../node_modules/@firebase/firestore";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
 
 const signUpButton = document.getElementById('signUpButton');
 const signInButton = document.getElementById('signInButton');
@@ -35,14 +35,14 @@ function showMessage(message, divId) {
     const auth = getAuth();
     const db = getFirestore();
 
-    createUserWhithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       const userData = {
         email: email,
         name: name,
       };
-      showMessage('Conta criada com sucesso', 'singUpMessage');
+      showMessage('Conta criada com sucesso', 'signUpMessage');
       const docRef = doc(db, "users", user.uid);
       setDoc(docRef, userData)
       .then(() => {
@@ -57,23 +57,23 @@ function showMessage(message, divId) {
     .catch((error) => {
       const errorCode = error.code;
       if (errorCode == 'auth/email-already-in-use') 
-        showMessage('O endereço de email existe está tudo certo!!!', 'singUpMessage');
+        showMessage('O endereço de email existe está tudo certo!!!', 'signUpMessage');
 
-      showMessage('Não é possivel criar usuario', 'singUpMessage');
+      showMessage('Não é possivel criar usuario', 'signUpMessage');
 
     })
   });
 
-  const singIn = document.getElementById('submitSingIn');
+  const singIn = document.getElementById('submitSignIn');
   singIn.addEventListener('click', (event) => {
     event.preventDefault();
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const auth = getAuth();
 
-    singInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      showMessage('login feito com sucesso', 'singInMessage');7
+      showMessage('login feito com sucesso', 'signInMessage');7
       const user = userCredential.user;
       localStorage.setItem('loggedInUserId', user.uid);
       window.location.href = '../html/templetes.html';
@@ -81,9 +81,9 @@ function showMessage(message, divId) {
     .catch((error) => {
       const errorCode = error.code;
       if (errorCode === 'auth/invalid-credential') 
-         showMessage('Email ou senha incorreta', 'singInMessage');
+         showMessage('Email ou senha incorreta', 'signInMessage');
       
-      showMessage('Conta não existe', 'singInMessage');
+      showMessage('Conta não existe', 'signInMessage');
     })
   })
 
